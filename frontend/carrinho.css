@@ -1,0 +1,39 @@
+#logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+ 
+   
+}
+ 
+#logo-header{
+    width: 40;
+    height: 40px;
+    border-radius: 100%;
+}
+ 
+footer{
+    background-color: #88b8d1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #88b8d1;
+}
+
+
+#carrinho{
+    width: 40;
+    height: 40px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72vh;
+    flex-direction: column;
+}
+

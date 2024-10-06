@@ -1,0 +1,19 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "ba ba ba",
+  "main": "index.html",
+  "scripts": {
+    "start": "nodemon ./serves.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "mysql2": "^3.11.3",
+    "node": "^22.9.0",
+    "nodemon": "^3.1.7"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}

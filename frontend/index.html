@@ -1,0 +1,198 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Desimaginarium</title>
+</head>
+
+
+
+
+
+
+
+
+
+<div id="cadastrarProduto" style="display: none;">
+    <h2>Cadastrar Produto</h2>
+    <input type="text" id="nomeProduto" placeholder="Nome do produto">
+    <input type="number" id="precoProduto" placeholder="Valor do produto">
+    <input type="file" id="imagemProduto">
+    <button onclick="cadastrarProduto(event)">Cadastrar</button>
+</div>
+
+
+
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+                <a href="paginainicial.html"><img id="logo-header" src="./assents/shared image (1).jpg" alt=""></a>
+                <a class="navbar-brand" href="#">Desimaginarium</a>
+                <div>
+                    <a href="carrinho.html"> <img id="carrinho" src="./assents/carrinho.webp" alt=""></a>
+                    <a href="login.html"><img id="carrinho" src="./assents/login.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#lista">Novos produtos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#recomendacao-texto">Em breve</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="catalogo.html">Catálogo</a>
+                                </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section class="titulo">
+            <h1>BEM VINDOS A DESIMAGINARIUM: O PORTAL DO MUNDO EXTRAORDINÁRIO!</h1>
+        </section>
+
+        <section class="texto">
+            <div class="propaganda">
+                Na Desimaginarium, seus sonhos mais selvagens ganham vida! 🚀 <br> Explore um mundo onde o impossível é
+                apenas o começo. Conheça nossos produtos únicos! <br> Nossos produtos encantados são cuidadosamente selecionados para transformar seu cotidiano em uma aventura mágica. <br> Descubra a magia, passando pela porta abaixo!
+            </div>
+
+    
+            <div class="produtos">
+                <ul id="lista">
+                    <h2 id="destaque">Nossos produtos de destaque:</h2>
+                    <li id="destaque-texto">Capivaras Voadoras: Descubra o encanto das capivaras que flutuam pelos céus, trazendo alegria e surpresa para seu dia a dia!</li>
+                    <li id="destaque-texto">Espelhos Encantados: Refletindo o seu melhor, nossos espelhos mágicos realçam a sua beleza interior e exterior, revelando a versão mais incrível de você! </li>
+                    <li id="destaque-texto">Lentes de Realidade Alternativa: Mude sua perspectiva e mergulhe em universos paralelos com um simples piscar de olhos. Viaje por mundos desconhecidos sem sair do lugar!</li>
+                    <li id="destaque-texto">Carpas Astronautas: Ouça a música das estrelas com nossas carpa que harmonizam as melodias do oceano com o toque de um astronauta.</li>
+                    <li id="destaque-texto">Monstros: Adote um amigo monstruosamente adorável! Nossos pequenos monstros estão prontos para trazer diversão e aventura para sua vida.</li>
+                </ul>
+
+                <div id="capivara">
+                    <img id="capivara-foto" src="./assents/paginaInicial/capivara voadora.png" class="img-fluid" alt="...">
+                    <h4>Capivaras voadoras estão em alta!</h4>
+                </div>
+            </div>
+
+            <h2 id="recomendacao-texto">EM BREVE NA DESIMAGINARIUM</h2>
+            <section class="recomendacoes">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assents/paginaInicial/chips de macaco.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chips de cocô de Macaco</h5>
+                                <p class="card-text">Uma Explosão de Sabor Exótico Você está pronto para uma experiência gustativa única? Conheça os Chips de Cocô cd Macaco, um snack inovador que promete surpreender seu paladar com sabores exóticos e deliciosos. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assents/paginaInicial/garrafa de arroto.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Garrafa de Arroto</h5>
+                                <p class="card-text">Porque Rir é o Melhor Remédio. Está em busca de uma maneira divertida e inesperada de animar seus encontros? Conheça a Garrafa de Arroto, a garrafa que garante risadas e boas memórias em qualquer ocasião!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assents/paginaInicial/ovo de dinossaauro.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ovo de dinossaauro</h5>
+                                <p class="card-text">Traga a Era dos Dinossauros Para a Sua Casa. Você já imaginou ter um pedaço da pré-história em suas mãos? Apresentamos os incríveis. Ovos de Dinossauro, uma experiência fascinante para todas as idades!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assents/paginaInicial/perfume de chulé.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chulé Essencial</h5>
+                                <p class="card-text">Descubra a Originalidade. Você já pensou em capturar a essência mais autêntica e ousada? Apresentamos o "Chulé Essencial", o perfume que quebra barreiras e redefine o conceito de fragrância.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assents/paginaInicial/bola de futebol quadrada.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bola de futebol quadrada</h5>
+                                <p class="card-text">Redefinindo as Regras do Jogo Você está pronto para um desafio completamente novo? Conheça a Bola de Futebol Quadrada, uma inovação que transforma qualquer partida em uma experiência cheia de diversão e estratégia!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assents/paginaInicial/sabonete de rosto.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sabonete de Rosto</h5>
+                                <p class="card-text">Descubra o Toque da Originalidade Você está pronto para uma revolução na sua rotina de cuidados pessoais? Conheça o Sabonete de Rosto, um produto inovador que promete transformar o seu banho em uma experiência única e inesquecível.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <div class="texto-baixo">
+                Na Desimaginarium, acreditamos que a magia está em todo lugar, basta saber onde procurar. <br> Venha nos visitar e deixe sua imaginação voar! 🌈💫 🧙‍♂️✨ Desimaginarium – Onde a Imaginação Não Tem Limites! ✨🧚‍♀️
+
+                <div class="texto-final">
+                    Por isso proporcionamos as melhores recomendações para você! <br> Buscamos no fundo da nossa sala de
+                    magia, e selecionamos as mais interessantes e excluivas para você! <br> De uma olhadinha e garanta
+                    já a sua!
+                </div>
+            </div>
+        </section>
+
+
+        <section  class="produtos" id="produtos2">
+            <div id="TituloCataklogo">
+            <h2>Catálogo</h2>
+            <h4>Venha conhecer os nossos produtos, você vai adorar!</h4>
+            </div>
+
+            
+        <div class="produtosCatalogo" id="produtos"></div>
+
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados</p>
+        <p>Entre em contato pelo e-mail: desimaginarium@gmail.com</p>
+        <a href="checkout.html"><img id="logo" src="./assents/shared image (1).jpg" alt=""></a>
+        <p>Entrar</p>
+    </footer>
+
+</body>
+
+</html>
